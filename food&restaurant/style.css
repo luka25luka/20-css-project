@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --main-color: #ff702a;
+    --text-color: #fff;
+    --bg-color: #1e1c2a;
+    --big-font: 5rem;
+    --h2-font:2.25rem;
+    --p-font:0.9rem;
+}
+*::selection {
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+body {
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 170px;
+    background-color: var(--bg-color);
+}
+.logo {
+    color: var(--main-color);
+    font-weight: 600;
+    font-size: 2.4rem;
+    text-decoration: none;
+}
+.navbar {
+    display: flex;
+}
+.navbar li {
+    list-style: none;
+}
+.navbar a {
+    color: var(--text-color);
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    font-weight: 500;
+    text-decoration: none;
+}
+.navbar a:hover {
+    color: var(--main-color);
+    transition: .4s;
+}
+#menu-icon {
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
